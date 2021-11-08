@@ -1,0 +1,27 @@
+#img-en-haut {
+  background: url(./img/background.jpg);
+  /* width: 100%;
+  height: 100%; */
+}
+h5 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: fantasy;
+}
+h1 {
+  font-family: monospace;
+  font-weight: 600;
+  color: white;
+}
+footer {
+  background-color: #dedede;
+}
+footer h5 {
+  color: #7885a5;
+}
+footer img {
+  background-color: #7885a5;
+  width: 150px;
+  height: 150px;
+}

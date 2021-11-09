@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Adopte un chat !</title>
+
+    <!-- Mes styles -->
+    <link rel="stylesheet" href="css/style_bootstrap_5.css">
+
+
+  </head>
+  <body>
+    <!-- =========================== -->
+    <!-- En-tête page -->
+    <!-- =========================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container bg-warning">
+                <a href="index_bootstrap">Adopte un chat!</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid en-tete">
+            <!-- <img src="img/background.jpg" alt="" class="w-100"> -->
+            <h1 class="text-center">Adopte un chat, ils sont trop mignons !</h1>
+        </div>
+    </header>
+
+    <!-- =========================== -->
+    <!-- Contenu principal -->
+    <!-- =========================== -->
+
+    <main>
+        <!-- =========================== -->
+        <!-- Diapo des chats et formulaire-->
+        <!-- =========================== -->
+        <section class="container">
+            <div class="row p-2">
+                <div class="col-12 d-sm-none d-md-none d-lg-none d-xl-none">
+                    <h4> nos chat</h4>
+                    <figure>
+                        <img src="img/chat_4.jpg" alt="Maki" class="img-fluid">
+                        <figcaption>Maki</figcaption>
+                    </figure>
+                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 order-md-2 d-none d-sm-black d-md-block d-lg-black d-xl-block">
+					<h2>1 Nos chats</h2>
+                  <!-- diaporama -->
+                    <div id="diaporamaChats" class="carousel slide" data-bs-ride="carousel">
+						<!-- indicateurs du diaporma -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#diaporamaChats" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#diaporamaChats" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#diaporamaChats" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#diaporamaChats" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#diaporamaChats" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+						<!-- contenus du diaporama  -->
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active">
+                            <img src="img/chat_1.jpg" class="d-block w-100" alt="Maki">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Maki</h5>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="img/chat_2.jpg" class="d-block w-100" alt="Sushi">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Sushi</h5>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="img/chat_3.jpg" class="d-block w-100" alt="Sashimi">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Sashimi</h5>
+                            </div>
+                          </div>
+
+						  <div class="carousel-item">
+                            <img src="img/chat_4.jpg" class="d-block w-100" alt="Yakitori">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Yakitori</h5>
+                            </div>
+                          </div>
+						  <div class="carousel-item">
+                            <img src="img/chat_5.jpg" class="d-block w-100" alt="Kurozawa">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Kurozawa</h5>
+                            </div>
+                          </div>
+                        </div>
+						<!-- fin carousel-inner  -->
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#diaporamaChats" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#diaporamaChats" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+					  <!-- fin diaporama  -->
+					  
+                </div>
+				<!-- fin col  -->
+
+				<div class="col-12 col-sm-12 col-md-4 order-md-1">
+					<h2>2 Adopte un chat</h2>
+
+					<form action="#" method="POST" id="adopteChat" class="border border-primary p-2 bg-light">
+						<div class="mb-3">
+							<label for="choix" class="form-label">Choix du chat</label>
+							<select name="choix" id="choix" class="form-select">
+								<option value="">Choisissez un chat</option>
+								<option value="sushi">Sushi</option>
+								<option value="maki">Maki</option>
+								<option value="sashimi">Sashimi</option>
+								<option value="yakitori">Yakitori</option>
+								<option value="onigri">Onigri</option>
+							</select>
+						</div>
+
+						<div class="mb-3 form-floating">							
+							<textarea name="message" id="message" cols="30" rows="5" placeholder="dites-nous en plus" class="form-control" ></textarea>
+							<label for="message" class="form-label">Raison d'adoption...</label>
+						</div>
+
+						<div class="mb-3">
+							<input type="submit" name="envoyer" id="envoyer" value="Envoyer" class="btn btn-primary">
+						</div>
+					</form>
+
+				</div>
+				<!-- fin col  -->
+
+
+            </div>
+			<!-- fin row  -->
+        </section>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

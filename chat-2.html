@@ -1,192 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="chat.js" ser />
-    <title>Chat-2</title>
-    <script src="chat.js"></script>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- css pro -->
-    <link rel="stylesheet" href="chat-2.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid bg-dark p-2">
-        <nav class="nav nav-bar bg-dark">
-          <a href="#footer" class="text-decoration-none ms-3 text-white"
-            >oh My Cats!</a
-          >
-        </nav>
-      </div>
-      <div class="container-fluid p-5" id="img-en-haut">
-        <h1 class="text-center p-5">Adoptez un chat trop bon</h1>
-      </div>
-    </header>
-    <main class="mt-5">
-      <section class="container mx-auto">
-        <div class="row g-2">
-          <div class="col-12 col-md-8 col-sm-12 col-lg-8">
-            <div
-              id="carouselExampleCaptions"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/chat_1.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Sushi</h5>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/chat_2.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Maki</h5>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/chat_3.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>three</h5>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/chat_4.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Yakitori</h5>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/chat_5.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Onigri</h5>
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="chat.js" ser />
+  <title>Chat-2</title>
+  <script src="chat.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- css pro -->
+  <link rel="stylesheet" href="chat-2.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid bg-dark p-2">
+      <nav class="nav nav-bar bg-dark">
+        <a href="#footer" class="text-decoration-none ms-3 text-white">oh My Cats!</a>
+      </nav>
+    </div>
+    <div class="container-fluid p-5" id="img-en-haut">
+      <h1 class="text-center p-5">Adoptez un chat trop bon</h1>
+    </div>
+  </header>
+  <main class="mt-5">
+    <section class="container mx-auto">
+      <div class="row g-2">
+        <div class="col-12 col-md-8 col-sm-12 col-lg-8">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/chat_1.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sushi</h5>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12 col-lg-4 mt-sm-5">
-            <div class="card" style="width: 20rem">
-              <h2>choix un chat</h2>
-              <form action="#" method="get" name="selection" id="FormSlection">
-                <select class="custom-select custom-select-sm" id="select">
-                  <option selected>Open this select menu</option>
-                  <option value="1" id="cha1">Sushi</option>
-                  <option value="2" id="cha2">Maki</option>
-                  <option value="3" id="cha3">Three</option>
-                  <option value="2" id="cha4">Yakitori</option>
-                  <option value="3" id="cha5">Onigri</option>
-                </select>
-
-                <div class="card-body">
-                  <div class="mb-3 w-100 h-100">
-                    <label for="exampleFormControlTextarea1" class="form-label"
-                      >Raison d'adoption :</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-
-                  <a href="#" class="btn btn-primary">Envoyer</a>
+              <div class="carousel-item">
+                <img src="img/chat_2.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Maki</h5>
                 </div>
-              </form>
+              </div>
+              <div class="carousel-item">
+                <img src="img/chat_3.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>three</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/chat_4.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Yakitori</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/chat_5.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Onigri</h5>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </section>
-      <!--  section 2eme -->
-    </main>
-    <footer>
-      <div class="containre-fluid">
-        <div class="row mt-4 w-75 mx-auto p-5">
-          <div class="col-12 col-md-8 col-sm-12 col-lg-10">
-            <h5>Nos chats à adopter</h5>
-            <p>
-              Sed quid est quod in hac causa maxime homines admirentur et
-              reprehendant meum consilium, cum ego idem antea multa decreverim,
-              que magis ad hominis dignitatem quam ad rei publicae necessitatem
-              pertinerent? Supplicationem quindecim dierum decrevi sententia
-              mea. Rei publicae satis erat tot dierum quot C. Mario ; dis
-              immortalibus non erat exigua eadem gratulatio quae ex maximis
-              bellis. Ergo ille cumulus dierum hominis est dignitati tributus.
-              Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta
-              petamus, amicorum causa honesta faciamus, ne exspectemus quidem,
-              dum rogemur; studium semper adsit, cunctatio absit; consilium vero
-              dare audeamus libere. Plurimum in amicitia amicorum bene
-              suadentium valeat auctoritas, eaque et adhibeatur ad monendum non
-              modo aperte sed etiam acriter, si res postulabit, et adhibitae
-              pareatur.
-            </p>
-          </div>
-          <div class="col-12 col-md-4 col-sm-12 col-lg-2 mt-5">
-            <img src="img/tete-chat.png" alt="" />
+        <div class="col-12 col-md-4 col-sm-12 col-lg-4 mt-sm-5">
+          <div class="card" style="width: 20rem">
+            <h2>choix un chat</h2>
+            <form action="#" method="get" name="selection" id="FormSlection">
+              <select class="custom-select custom-select-sm" id="select">
+                <option selected>Open this select menu</option>
+                <option value="1" id="cha1">Sushi</option>
+                <option value="2" id="cha2">Maki</option>
+                <option value="3" id="cha3">Three</option>
+                <option value="2" id="cha4">Yakitori</option>
+                <option value="3" id="cha5">Onigri</option>
+              </select>
+
+              <div class="card-body">
+                <div class="mb-3 w-100 h-100">
+                  <label for="exampleFormControlTextarea1" class="form-label">Raison d'adoption :</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <a href="#" class="btn btn-primary">Envoyer</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+    <!--  section 2eme -->
+  </main>
+  <footer>
+    <div class="containre-fluid">
+      <div class="row mt-4 w-75 mx-auto p-5">
+        <div class="col-12 col-md-8 col-sm-12 col-lg-10">
+          <h5>Nos chats à adopter</h5>
+          <p>
+            Sed quid est quod in hac causa maxime homines admirentur et
+            reprehendant meum consilium, cum ego idem antea multa decreverim,
+            que magis ad hominis dignitatem quam ad rei publicae necessitatem
+            pertinerent? Supplicationem quindecim dierum decrevi sententia
+            mea. Rei publicae satis erat tot dierum quot C. Mario ; dis
+            immortalibus non erat exigua eadem gratulatio quae ex maximis
+            bellis. Ergo ille cumulus dierum hominis est dignitati tributus.
+            Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta
+            petamus, amicorum causa honesta faciamus, ne exspectemus quidem,
+            dum rogemur; studium semper adsit, cunctatio absit; consilium vero
+            dare audeamus libere. Plurimum in amicitia amicorum bene
+            suadentium valeat auctoritas, eaque et adhibeatur ad monendum non
+            modo aperte sed etiam acriter, si res postulabit, et adhibitae
+            pareatur.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 col-sm-12 col-lg-2 mt-5">
+          <img src="img/tete-chat.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
